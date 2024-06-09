@@ -1,0 +1,172 @@
+/*Geral*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.container {
+    background-color: #b6b6b6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+
+}
+
+h2 {
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+h3 {
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+input[type="submit"] {
+    display: block;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+input[type="submit"]:hover {
+    background-color: #525151;
+}
+
+br {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+input {
+    width: calc(100% - 16px); 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#Login, #Perfil, #Cadastro{
+    display: flex;
+}
+
+/*Barra de navegação*/
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+/*Cadastro*/
+#cadastro form{
+    width: 300px;
+}
+
+#cadastro h1 {
+    margin-bottom: 20px;
+}
+
+#Cadastro div {
+    margin-bottom: 15px;
+}
+
+#cadastro label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+/*Perfil*/
+#Perfil span {
+    font-weight: bold;
+}
+
+/*Index*/
+#index {
+    display: block;
+}
+
+#Index p {
+    color: #000000;
+    text-align: justify;
+    width: 600px;
+    margin: 0 auto 20px;
+}
+
+#Index input{
+    margin: 0 auto;
+    width: 180px;
+}
+
+#Index span {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/*Perfil*/
+#Perfil input[type="submit"] {
+    display: inline;
+}
+
+#Perfil p {
+    color: #333;
+    margin: 10px 0;
+}

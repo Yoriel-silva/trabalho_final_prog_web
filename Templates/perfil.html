@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../static/CSS/style.css">
+    <script src="../static/JS/script.js"></script>
+</head>
+<body id="Perfil">
+    <div class="navbar">
+        <a href="http://127.0.0.1:7777/index">Index</a>
+        <a href="http://127.0.0.1:7777/login">Login</a>
+        <a href="http://127.0.0.1:7777/cadastro">Cadastro</a>
+        <a href="http://127.0.0.1:7777/perfil">Perfil</a>
+    </div>
+    <div class="container">
+        <h1>Perfil</h1>
+        <div id="display">
+            {% if message %}
+            <div style="color: red;">{{ message }}</div>
+            {% endif %}
+            <p>Nome: <span id="nomeDisplay">{{ nome }}</span></p>
+            <p>Elemento: <span id="elementoDisplay">{{ elemento }}</span></p>
+            <p>Email: <span id="emailDisplay">{{ email }}</span></p>
+            <p>Senha: <span id="senhaDisplay">{{ senha }}</span></p>
+            <input type="submit" onclick="toggleEdit()" value="Editar"></input>
+            
+            <form action='/perfil/deletar' method='post' style='display: inline;'>
+                <input type='submit' value="Deletar"></input>
+            </form>
+            <form action='/perfil/logout' method='get' style='display: inline;'>
+                <input type='submit' value="Deslogar"></input>
+            </form>
+        </div>
+        
+        <div id="edit" style="display: none;">
+            <form id="editForm" action="/perfil/editar" method="post">
+                <label for="nomeInput">Nome:</label>
+                <input type="text" id="nomeInput" name="nome" value="{{ nome }}">
+                <br>
+                <label for="elementoInput">Elemento:</label>
+                <input type="text" id="elementoInput" name="elemento" value="{{ elemento }}">
+                <br>
+                <label for="emailInput">Email:</label>
+                <input type="email" id="emailInput" name="email" value="{{ email }}">
+                <br>
+                <label for="senhaInput">Senha:</label>
+                <input type="text" id="senhaInput" name="senha" value="{{ senha }}">
+                <br>
+                <input type="submit" value="Salvar"></input>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
