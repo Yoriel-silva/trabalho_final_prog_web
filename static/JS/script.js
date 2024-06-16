@@ -26,10 +26,10 @@ function getQueryParams() {
     return params;
   }
 
-// Preencher o campo 'nome' com o valor do parâmetro de consulta
+// Preencher o campo 'elemento' com o valor do parâmetro de consulta
 document.addEventListener("DOMContentLoaded", () => {
     const params = getQueryParams();
     if (params.elemento) {
-      document.getElementById('nome').value = params.elemento;
+      document.getElementById('elemento').value = params.elemento;
     }
   });

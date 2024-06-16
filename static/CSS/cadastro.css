@@ -1,0 +1,18 @@
+/*Cadastro*/
+#cadastro form{
+    width: 300px;
+}
+
+#cadastro h1 {
+    margin-bottom: 20px;
+}
+
+#Cadastro div {
+    margin-bottom: 15px;
+}
+
+#cadastro label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}

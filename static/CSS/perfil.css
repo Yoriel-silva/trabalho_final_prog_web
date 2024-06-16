@@ -1,0 +1,13 @@
+/*Perfil*/
+#Perfil span {
+    font-weight: bold;
+}
+
+#Perfil input[type="submit"] {
+    display: inline;
+}
+
+#Perfil p {
+    color: #333;
+    margin: 10px 0;
+}

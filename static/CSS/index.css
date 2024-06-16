@@ -1,0 +1,23 @@
+/*Index*/
+#index {
+    display: block;
+}
+
+#Index p {
+    color: #000000;
+    text-align: justify;
+    width: 600px;
+    margin: 0 auto 20px;
+}
+
+#Index input{
+    margin: 0 auto;
+    width: 180px;
+}
+
+#Index span {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}

@@ -1,21 +1,34 @@
 /*Geral*/
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
     margin: 0;
     padding: 0;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding-top: 50px;
+    background: url(/static/imagem/avatar.webp) no-repeat center center fixed;
+    background-size: cover;
 }
 
+.centered{
+    font-weight: bold;
+}
+
+.teste{
+    background-color: rgb(240, 248, 255, 0.5);
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 5px 0;
+}
 .container {
-    background-color: #b6b6b6;
+    background-color: rgb(240, 248, 255, 0.5);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 400px;
+    
 }
 
 h1 {
@@ -90,83 +103,44 @@ input {
 /*Barra de navegação*/
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(0, 0, 0);
     position: fixed;
     top: 0;
     width: 100%;
     margin-bottom: 30px;
+    display: block;
+}
+
+.direita{
     display: flex;
     justify-content: flex-end;
-  }
-  
-  .navbar a {
+    float: right;
+}
+
+.navbar a {
+    margin-top: 10px;
     float: left;
     display: block;
     color: white;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-  }
-  
-  .navbar a:hover {
+    font-size: 20px;
+} 
+
+.navbar a:hover {
+
     background-color: #ddd;
     color: black;
-  }
-
-/*Cadastro*/
-#cadastro form{
-    width: 300px;
 }
 
-#cadastro h1 {
-    margin-bottom: 20px;
+.nav-logo {
+    display: flex;
+    align-items: center;
 }
 
-#Cadastro div {
-    margin-bottom: 15px;
-}
-
-#cadastro label {
-    display: block;
-    margin-bottom: 5px;
-    color: #000000;
-}
-
-/*Perfil*/
-#Perfil span {
-    font-weight: bold;
-}
-
-/*Index*/
-#index {
-    display: block;
-}
-
-#Index p {
-    color: #000000;
-    text-align: justify;
-    width: 600px;
-    margin: 0 auto 20px;
-}
-
-#Index input{
-    margin: 0 auto;
-    width: 180px;
-}
-
-#Index span {
-    text-align: center;
-    display: block;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-/*Perfil*/
-#Perfil input[type="submit"] {
-    display: inline;
-}
-
-#Perfil p {
-    color: #333;
-    margin: 10px 0;
+.nav-icon {
+    
+    height: 70px; /* Adjust the height as needed */
+    width: auto;
 }

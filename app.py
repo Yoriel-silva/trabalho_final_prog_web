@@ -34,7 +34,7 @@ api.mount("/static", StaticFiles(directory="static"), name="static")
 
 #Rotas da API
 #Rota Pagina Index
-@api.get('/index', response_class=HTMLResponse)
+@api.get('/', response_class=HTMLResponse)
 def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request,})
  
@@ -115,4 +115,4 @@ def deletar(request: Request):
     return RedirectResponse(url=f"/perfil/logout", status_code=303)
 
 #Rodar o servidor
-uvicorn.run(app=api,port=7777)
+uvicorn.run(app=api,port=8000)
