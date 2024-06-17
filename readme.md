@@ -1,6 +1,6 @@
 # Projeto FastAPI com Docker
 
-Este é um simples projeto utilizando FastAPI, com uma tematica do mundo avatar, que posui um sistem de crud. Ele é conectado a um banco de dados usandoo SQLAlchemy para acesso, além de usar o Jinja2 para templates HTML.
+Este é um simples projeto utilizando FastAPI, com uma temática do mundo avatar, que posui um sistema de crud. Ele é conectado a um banco de dados usandoo SQLAlchemy para acesso, além de usar o Jinja2 para templates HTML.
 
 ## Pré-requisitos
 
