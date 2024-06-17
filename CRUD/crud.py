@@ -24,16 +24,17 @@ def read(user_email):
 
 #Operação de Atualização de usario especifico usando o e-mail - opção1
 def update(nome: str, elemento: str, email: str, senha: str, session_email: str):
-    usuario = read(session_email)
-    if usuario:
-        usuario.nome = nome
-        usuario.elemento = elemento
-        usuario.email = email
-        usuario.senha = senha
-        s.commit()
-        s.refresh(usuario)
-        return usuario
-    return None
+     with Session() as s:
+    usuario = usuario = s.query(Usuario).filter(Usuario.email == f'{session_email}').first()
+        if usuario:
+            usuario.nome = nome
+            usuario.elemento = elemento
+            usuario.email = email
+            usuario.senha = senha
+            s.commit()
+            s.refresh(usuario)
+            return usuario
+        return None
 
 #Operação de exclusão de usuário usando e-mail
 def delete(user_email: str):
