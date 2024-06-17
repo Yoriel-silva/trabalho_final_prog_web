@@ -24,8 +24,8 @@ def read(user_email):
 
 #Operação de Atualização de usario especifico usando o e-mail - opção1
 def update(nome: str, elemento: str, email: str, senha: str, session_email: str):
-     with Session() as s:
-    usuario = usuario = s.query(Usuario).filter(Usuario.email == f'{session_email}').first()
+    with Session() as s:
+        usuario = usuario = s.query(Usuario).filter(Usuario.email == f'{session_email}').first()
         if usuario:
             usuario.nome = nome
             usuario.elemento = elemento
